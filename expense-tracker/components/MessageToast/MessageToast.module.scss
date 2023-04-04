@@ -1,0 +1,53 @@
+$float-right: right;
+$center-alignment: center;
+
+@mixin sizesetter($iconheight, $iconwidth) {
+    width: $iconwidth;
+    height: $iconheight;
+  }
+
+//   modal style
+.modal {
+    @include sizesetter(100%, 100%);
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);     
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+// modal content is styled
+.modalContent {
+    background-color: rgba(150, 190, 30, 0.9);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // padding: 1rem 1.5rem;
+    width: 16rem;
+    border-radius: 0.5rem;
+
+    h5{
+        text-align: center;
+    }
+}
+
+// closebutton is styled
+.closeButton {
+    float: $float-right;
+    width: 1rem;
+    line-height: 1rem;
+    text-align: $center-alignment;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: rgba(150, 190, 30, 0.1);
+}
+
+.hide {
+    visibility: hidden
+}

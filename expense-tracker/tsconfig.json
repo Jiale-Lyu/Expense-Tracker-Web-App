@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/User.js", "components/Nav.js", "pages/api/user.js", "components/mailer/mailer.js", "pages/index.js", "pages/api/blogs.js", "pages/login.jsx", "pages/register.js", "components/ShoppingList/ShoppingList.jsx/RegUser/RegUser.jsx", "components/Expense/table.jsx", "components/Expense/addUserForm.jsx", "components/budget/budget.jsx"], 
+  "exclude": ["node_modules"]
+}
